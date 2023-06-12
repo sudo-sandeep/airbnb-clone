@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body {
-  @apply h-screen
+html,body,:root {
+  @apply h-full
 }
