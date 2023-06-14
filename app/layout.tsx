@@ -1,3 +1,4 @@
+import Modal from './components/Modal'
 import Navbar from './components/Navbar'
 import './globals.css'
 import { Nunito } from 'next/font/google'
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
+        <Modal isOpen title='New Modal' actionLabel="Login" secondaryActionLabel="Signup"/>
         <Navbar/>
         {children}</body>
     </html>
